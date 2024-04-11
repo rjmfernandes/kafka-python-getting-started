@@ -14,3 +14,22 @@ confluent local kafka start
 
 Update `getting_started.ini` with the Plaintext Ports output from last command.
 
+```shell
+chmod u+x producer.py
+
+./producer.py getting_started.ini
+```
+
+```shell
+chmod u+x consumer.py
+
+./consumer.py getting_started.ini
+```
+
+```shell
+confluent local kafka stop
+```
+
+```shell
+deactivate
+```
